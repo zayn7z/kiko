@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Blue Heart</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .heart {
+            font-size: 100px; /* Ukuran emoji hati biru */
+            color: #0000FF; /* Warna biru */
+            animation: rotateHeart 5s linear infinite; /* Animasi rotasi */
+        }
+        .call {
+            color: aliceblue;
+        }
+
+        @keyframes rotateHeart {
+            0% {
+                transform: rotate(0deg); /* Mulai dari 0 derajat */
+            }
+            100% {
+                transform: rotate(360deg); /* Putar hingga 360 derajat */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="call">
+        call me okheyy
+    </h1>
+    <div class="heart">💙</div>
+
+</body>
+</html>

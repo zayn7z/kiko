@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            text-align: center;
+            padding: 50px;
+            color: #333;
+            margin: 0;
+            height: 100vh; /* Memastikan body memenuhi layar */
+            position: relative;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ff3366; /* Warna pink valentine */
+            margin-bottom: 20px;
+        }
+
+        /* Emoji penguin dengan animasi */
+        .emoji {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: waveAndSmile 2s infinite; /* Animasi melambaikan tangan dan tersenyum */
+        }
+
+        /* Animasi melambaikan tangan dan ekspresi penguin */
+        @keyframes waveAndSmile {
+            0% {
+                transform: rotate(-10deg); /* Mulai sedikit miring ke kiri */
+            }
+            25% {
+                transform: rotate(10deg); /* Miring ke kanan */
+            }
+            50% {
+                transform: rotate(-10deg); /* Kembali ke kiri */
+            }
+            75% {
+                transform: rotate(10deg); /* Miring ke kanan lagi */
+            }
+            100% {
+                transform: rotate(0deg); /* Kembali ke posisi normal */
+            }
+        }
+
+        /* Tombol YES dan NO */
+        .btn {
+            display: inline-block;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            margin: 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .btn-yes {
+            background-color: green;
+        }
+        .btn-no {
+            background-color: red;
+        }
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Menambahkan elemen dekoratif di pojok dan samping */
+        .love, .chocolate {
+            position: absolute;
+            font-size: 50px;
+            opacity: 0.5;
+        }
+
+        /* Hati di pojok kiri atas */
+        .love {
+            top: 10px;
+            left: 10px;
+        }
+
+        /* Coklat di pojok kanan bawah */
+        .chocolate {
+            bottom: 10px;
+            right: 10px;
+            font-size: 60px;
+        }
+
+        /* Menambahkan background gradien dengan nuansa valentine */
+        .background {
+            position: fixed; /* Mengunci background agar tidak bergerak saat scroll */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #ff3366, #ff66b2);
+            opacity: 0.2;
+            z-index: -1; /* Agar latar belakang tidak menutupi elemen lainnya */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="background"></div> <!-- Latar belakang gradien penuh -->
+
+    <h1>WILL YOU BE MY VALENTINE?</h1>
+
+    <!-- Emoji Penguin Biru dengan animasi -->
+    <div class="emoji">🐧</div>
+
+    <!-- Tombol YES dan NO -->
+    <a href="yes.html" class="btn btn-yes">YES</a>
+    <a href="index2.html" class="btn btn-no">NO</a>
+
+    <!-- Hati di pojok kiri atas -->
+    <div class="love">❤️</div>
+
+    <!-- Coklat di pojok kanan bawah -->
+    <div class="chocolate">🍫</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goback bb</title>
+</head>
+<body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        text-align: center;
+        padding: 50px;
+        color: #333;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Menambahkan latar belakang gradien untuk efek */
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #ff3366, #ff66b2);
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+    /* Desain tombol Home dengan efek berkilau */
+    .home-btn {
+        display: inline-block;
+        font-size: 2em;
+        padding: 20px 50px;
+        margin: 20px;
+        text-decoration: none;
+        border-radius: 12px;
+        color: white;
+        background: linear-gradient(45deg, #1e90ff, #00bfff); /* Biru cerah */
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.6), 0 0 20px rgba(0, 0, 255, 0.6); /* Efek berkilau */
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .home-btn:hover {
+        transform: scale(1.1); /* Membesarkan tombol saat hover */
+        box-shadow: 0 0 25px rgba(0, 0, 255, 0.8), 0 0 40px rgba(0, 0, 255, 0.8); /* Efek berkilau lebih besar */
+    }
+
+    .home-btn:active {
+        transform: scale(1); /* Mengembalikan ukuran tombol saat diklik */
+        box-shadow: 0 0 15px rgba(0, 0, 255, 0.6); /* Efek saat tombol ditekan */
+    }
+
+</style>
+</head>
+<body>
+
+<div class="background"></div> <!-- Latar belakang gradien -->
+<h1>
+    CMON BB
+</h1>
+
+<!-- Tombol Home -->
+<a href="index.html" class="home-btn">HOME BUTTON</a>
+
+</body>
+</html>
